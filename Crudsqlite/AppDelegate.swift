@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Crudsqlite
-//
-//  Created by Jorge Maldonado Borbón on 02/01/18.
-//  Copyright © 2018 Jorge Maldonado Borbón. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

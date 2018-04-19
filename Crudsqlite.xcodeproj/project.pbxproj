@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1AB4A16027CE4BF7334EF68 /* Pods_Crudsqlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3932D32C63F96D1D6C2BC186 /* Pods_Crudsqlite.framework */; };
 		CF3A4D1C1FFC15FF002C9AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D1B1FFC15FF002C9AD3 /* AppDelegate.swift */; };
 		CF3A4D1E1FFC15FF002C9AD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D1D1FFC15FF002C9AD3 /* ViewController.swift */; };
 		CF3A4D211FFC15FF002C9AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3A4D1F1FFC15FF002C9AD3 /* Main.storyboard */; };
 		CF3A4D231FFC15FF002C9AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3A4D221FFC15FF002C9AD3 /* Assets.xcassets */; };
 		CF3A4D261FFC15FF002C9AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3A4D241FFC15FF002C9AD3 /* LaunchScreen.storyboard */; };
+		CF3A4D2E1FFC1A63002C9AD3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D2D1FFC1A63002C9AD3 /* Database.swift */; };
+		CF3A4D301FFC1C24002C9AD3 /* Tablanotas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D2F1FFC1C24002C9AD3 /* Tablanotas.swift */; };
+		CF3A4D321FFC2123002C9AD3 /* Notas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D311FFC2123002C9AD3 /* Notas.swift */; };
+		CF3A4D341FFC21AB002C9AD3 /* MostrarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D331FFC21AB002C9AD3 /* MostrarTableViewController.swift */; };
+		CF3A4D361FFC24C7002C9AD3 /* EditarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3A4D351FFC24C7002C9AD3 /* EditarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3932D32C63F96D1D6C2BC186 /* Pods_Crudsqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crudsqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3A4D181FFC15FF002C9AD3 /* Crudsqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crudsqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3A4D1B1FFC15FF002C9AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3A4D1D1FFC15FF002C9AD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		CF3A4D221FFC15FF002C9AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3A4D251FFC15FF002C9AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3A4D271FFC15FF002C9AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3A4D2D1FFC1A63002C9AD3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		CF3A4D2F1FFC1C24002C9AD3 /* Tablanotas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tablanotas.swift; sourceTree = "<group>"; };
+		CF3A4D311FFC2123002C9AD3 /* Notas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notas.swift; sourceTree = "<group>"; };
+		CF3A4D331FFC21AB002C9AD3 /* MostrarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostrarTableViewController.swift; sourceTree = "<group>"; };
+		CF3A4D351FFC24C7002C9AD3 /* EditarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarViewController.swift; sourceTree = "<group>"; };
+		DB0C6D459E1D797E6169E81D /* Pods-Crudsqlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crudsqlite.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crudsqlite/Pods-Crudsqlite.release.xcconfig"; sourceTree = "<group>"; };
+		EB36E41045CAD37629185027 /* Pods-Crudsqlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crudsqlite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crudsqlite/Pods-Crudsqlite.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1AB4A16027CE4BF7334EF68 /* Pods_Crudsqlite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64BA4507C132640DEF4B54A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3932D32C63F96D1D6C2BC186 /* Pods_Crudsqlite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF3A4D0F1FFC15FF002C9AD3 = {
 			isa = PBXGroup;
 			children = (
 				CF3A4D1A1FFC15FF002C9AD3 /* Crudsqlite */,
 				CF3A4D191FFC15FF002C9AD3 /* Products */,
+				F42DB1DAB75CA60F675A48D7 /* Pods */,
+				64BA4507C132640DEF4B54A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +81,26 @@
 			children = (
 				CF3A4D1B1FFC15FF002C9AD3 /* AppDelegate.swift */,
 				CF3A4D1D1FFC15FF002C9AD3 /* ViewController.swift */,
+				CF3A4D2D1FFC1A63002C9AD3 /* Database.swift */,
+				CF3A4D2F1FFC1C24002C9AD3 /* Tablanotas.swift */,
+				CF3A4D351FFC24C7002C9AD3 /* EditarViewController.swift */,
+				CF3A4D331FFC21AB002C9AD3 /* MostrarTableViewController.swift */,
+				CF3A4D311FFC2123002C9AD3 /* Notas.swift */,
 				CF3A4D1F1FFC15FF002C9AD3 /* Main.storyboard */,
 				CF3A4D221FFC15FF002C9AD3 /* Assets.xcassets */,
 				CF3A4D241FFC15FF002C9AD3 /* LaunchScreen.storyboard */,
 				CF3A4D271FFC15FF002C9AD3 /* Info.plist */,
 			);
 			path = Crudsqlite;
+			sourceTree = "<group>";
+		};
+		F42DB1DAB75CA60F675A48D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB36E41045CAD37629185027 /* Pods-Crudsqlite.debug.xcconfig */,
+				DB0C6D459E1D797E6169E81D /* Pods-Crudsqlite.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF3A4D2A1FFC15FF002C9AD3 /* Build configuration list for PBXNativeTarget "Crudsqlite" */;
 			buildPhases = (
+				2868C336110B8BA44ACBECFD /* [CP] Check Pods Manifest.lock */,
 				CF3A4D141FFC15FF002C9AD3 /* Sources */,
 				CF3A4D151FFC15FF002C9AD3 /* Frameworks */,
 				CF3A4D161FFC15FF002C9AD3 /* Resources */,
+				7947EF3DBCCAA9F768123099 /* [CP] Embed Pods Frameworks */,
+				F751C67034642EFA64D432DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -92,7 +134,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Jorge Maldonado Borbón";
+				ORGANIZATIONNAME = codelapp;
 				TargetAttributes = {
 					CF3A4D171FFC15FF002C9AD3 = {
 						CreatedOnToolsVersion = 9.2;
@@ -101,7 +143,7 @@
 				};
 			};
 			buildConfigurationList = CF3A4D131FFC15FF002C9AD3 /* Build configuration list for PBXProject "Crudsqlite" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -131,11 +173,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2868C336110B8BA44ACBECFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crudsqlite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7947EF3DBCCAA9F768123099 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crudsqlite/Pods-Crudsqlite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crudsqlite/Pods-Crudsqlite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F751C67034642EFA64D432DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crudsqlite/Pods-Crudsqlite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF3A4D141FFC15FF002C9AD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3A4D341FFC21AB002C9AD3 /* MostrarTableViewController.swift in Sources */,
+				CF3A4D301FFC1C24002C9AD3 /* Tablanotas.swift in Sources */,
+				CF3A4D2E1FFC1A63002C9AD3 /* Database.swift in Sources */,
+				CF3A4D321FFC2123002C9AD3 /* Notas.swift in Sources */,
+				CF3A4D361FFC24C7002C9AD3 /* EditarViewController.swift in Sources */,
 				CF3A4D1E1FFC15FF002C9AD3 /* ViewController.swift in Sources */,
 				CF3A4D1C1FFC15FF002C9AD3 /* AppDelegate.swift in Sources */,
 			);
@@ -216,6 +317,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -265,19 +367,24 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		CF3A4D2B1FFC15FF002C9AD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB36E41045CAD37629185027 /* Pods-Crudsqlite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Crudsqlite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.Crudsqlite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -286,12 +393,16 @@
 		};
 		CF3A4D2C1FFC15FF002C9AD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB0C6D459E1D797E6169E81D /* Pods-Crudsqlite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Crudsqlite/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.Crudsqlite;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codelapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
